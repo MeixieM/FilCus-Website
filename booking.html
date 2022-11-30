@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FilCus - Booking </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- fontawesome icon -->
+    <link href="Images/Logo1.png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+
+
+	<!-- header section start -->
+	<header>
+		<a href="index.html" class="logo"><img src="./Images/Logo3.png"></a>
+
+<!-- search-form  -->
+<div class="icons">
+  <a href="https://www.facebook.com/profile.php?id=100083292724909&mibextid=ZbWKwL" class="fab fa-facebook-f"></a>
+  <a href="https://www.facebook.com/profile.php?id=100083292724909&mibextid=ZbWKwL" class="fab fa-instagram"></a>
+  <a href="https://www.facebook.com/profile.php?id=100083292724909&mibextid=ZbWKwL" class="fab fa-twitter"></a>          
+</div>
+	</header>
+<!-- header section end -->
+
+<section class = "booking">
+      <div class = "menu-head">
+        <h3>Book Now</h3>
+        <h1>A good meeting or event starts with even better food. Book a table or celebrate an event with us. Ask for more details, 
+          as we are more than happy to help you select the perfect food selection that is crafted to make your dining experience exceptional. 
+        </h1>
+      </div>
+
+      <div class = "menu-btns">
+        <button type = "button" class = "menu-btn active-btn" id = "Book-A-Table">Book A Table</button>
+        <button type = "button" class = "menu-btn" id = "Book-An-Event">Book An Event</button>
+      </div>
+
+      <div class = "food-item Book-A-Table">
+        <form action="https://formspree.io/f/mqkjjeqd" method="POST">
+          <div class="flex">
+            <div class="inputBox">
+                <span>Full Name</span>
+                <input type="text" placeholder="Customer's Name" name="Customer's Name" id="" required>
+            </div>
+            <div class="inputBox">
+                <span>Number of Adults</span>
+                <input type="number" placeholder="#" name="" id="Number of Adults" required>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="inputBox">
+                <span>Phone Number</span>
+                <input type="number" placeholder="Customer's Number" name="Phone Number" id="" required>
+            </div>
+            <div class="inputBox">
+                <span>Number of Children</span>
+                <input type="number" placeholder="#" name="Number of Children" id="" required>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="inputBox">
+                <span>Email</span>
+                <input type="text" placeholder="Your Email" name="email" id="Email" required>
+            </div>
+            <div class="inputBox">
+                <span>Time and Date</span>
+                <input type="datetime-local" name="Time and Date" required>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="inputBox">
+                <textarea placeholder="Special Request" id="" cols="30" rows="10" name="Special Request"></textarea>
+            </div>
+            <div class="inputBox">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30895.84349359069!2d121.04154435!3d14.54311145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8f3fa2994af%3A0x89c988af4760e40a!2sBonifacio%20Global%20City%2C%20Taguig%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1669100538683!5m2!1sen!2sph" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <input type="submit" value="Book Now" class="button">
+        <button id="clear" input type="reset" class="clear" >Clear All</button>
+      </form>
+
+      </div>
+
+      <div class = "food-item Book-An-Event">
+        <form action="https://formspree.io/f/mdojdnbr" method="POST">
+          <div class="flex">
+            <div class="inputBox">
+                <span>Full Name</span>
+                <input type="text" placeholder="Client's Name" name="Full Name" id="" required>
+            </div>
+            <div class="inputBox">
+                <span>Event Name</span>
+                <input type="text" placeholder="" name="Event Name" id="" required>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="inputBox">
+                <span>Phone Number</span>
+                <input type="number" placeholder="Client's Number" name="Phone Number" id="" required>
+            </div>
+            <div class="inputBox">
+                <span>Type of Event</span>
+                <select name="people" id="people" name="Type of Event" input type="text"required>
+                  <option value=""></option>
+                  <option value="1">Wedding</option>
+                  <option value="2">Graduation</option>
+                  <option value="3">Corporate Event</option>
+                  <option value="4">Birthday Party</option>
+                  <option value="4">Bridal Shower</option>
+                  <option value="4">Baby Shower</option>
+              </select>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="inputBox">
+                <span>Address</span>
+                <input type="text" placeholder="Address" name="Address" id="" required>
+            </div>
+            <div class="inputBox">
+              <span>Expected Number of People</span>
+              <input type="number" placeholder="#" name="Expected Number of People" id="" required>
+          </div>
+          <div class="inputBox">
+            <span>Email</span>
+            <input type="text" placeholder="Client's Email" name="Email" id="" required>
+        </div>
+            <div class="inputBox">
+                <span>Time and Date</span>
+                <input type="datetime-local" name="Time and Date" required>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="inputBox">
+                <textarea placeholder="Notes" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="inputBox">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30895.84349359069!2d121.04154435!3d14.54311145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8f3fa2994af%3A0x89c988af4760e40a!2sBonifacio%20Global%20City%2C%20Taguig%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1669100538683!5m2!1sen!2sph" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <input type="submit" value="Book Now" class="button">
+        <button id="clear" input type="reset" class="clear" >Clear All</button>
+      </form>
+
+      </div>
+
+      
+
+
+      
+</section>
+
+<script>
+
+  //Menu
+const menuBtns = document.querySelectorAll('.menu-btn');
+const foodItems = document.querySelectorAll('.food-item');
+
+let activeBtn = "Book-A-Table";
+
+showFoodMenu(activeBtn);
+
+menuBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        resetActiveBtn();
+        showFoodMenu(btn.id);
+        btn.classList.add('active-btn');
+    });
+});
+
+function resetActiveBtn(){
+    menuBtns.forEach((btn) => {
+        btn.classList.remove('active-btn');
+    });
+}
+
+function showFoodMenu(newMenuBtn){
+    activeBtn = newMenuBtn;
+    foodItems.forEach((item) => {
+        if(item.classList.contains(activeBtn)){
+            item.style.display = "grid";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
+</script>
+
+
+<!-- footer section start -->
+<section class="footer">
+
+    <div class="box-container">
+  
+        <div class="box">
+            <h3> FilCus <i class="fas fa-shopping-basket"></i> </h3>
+            <p>FilCus is a food website that promotes Filipino Cuisines to the world through simple, delicious, quality and extraordinary foods.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+        </div>
+  
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +63 12-3456-789 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> filcus.info@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> 13 Street BGC, Taguig </a>
+        </div>
+  
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> Home </a>
+            <a href="about.html" class="links"> <i class="fas fa-arrow-right"></i> About Us </a>
+            <a href="menu.html" class="links"> <i class="fas fa-arrow-right"></i> Menu </a>
+            <a href="services.html" class="links"> <i class="fas fa-arrow-right"></i> Services </a>
+            <a href="contact.html" class="links"> <i class="fas fa-arrow-right"></i> Contact Us</a>
+        </div>
+  
+        <div class="box">
+          <form action="https://formspree.io/f/mqkjjeqd" method="POST">
+          <h3>Newsletter</h3>
+          <p>Subscribe For Latest Updates</p>
+          <div>
+          <label> <input type="email" placeholder="Your Email" class = "email" required></label>
+          </div>
+          <input type="submit" value="Subscribe" class="button">
+          </form>
+      </div>
+  
+    </div>
+      
+              <div class="credit"> Copyright © 2022 <span>FilCus.</span> |  All Rights Reserved. </div>
+              
+          </div>
+  </section>
+  <!-- footer section end -->
+  
+  <!-- jump to top -->
+  
+  <a href="#"><button class="topbtn"><i class="fa-solid fa-angle-up"></i></button></a>
+  
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+  </body>
+  </html>

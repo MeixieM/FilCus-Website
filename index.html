@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FilCus</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href="Images/Logo1.png" rel="icon">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <!-- header section start -->
+    <header id="header1">
+        <a href="index.html" class="logo"><img src="./Images/Logo3.png"></a>
+
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <!--  menu  and social media -->
+        <div class="icons">
+            <a class="fas fa-bars" id="menu"></a>
+            <a href="https://www.facebook.com/profile.php?id=100083292724909&mibextid=ZbWKwL"
+                class="fab fa-facebook-f"></a>
+            <a href="https://www.facebook.com/profile.php?id=100083292724909&mibextid=ZbWKwL"
+                class="fab fa-instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=100083292724909&mibextid=ZbWKwL"
+                class="fab fa-twitter"></a>
+        </div>
+    </header>
+    <!-- header section end -->
+
+
+    <!-- slider section start -->
+    <div class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide slide1">
+                    <div class="content">
+                        <img src="./Images/1.png">
+
+                        <h3>Fine Dining</h3>
+                        <h1>Love At First Bite</h1>
+                        <p>
+                            Cuisine You'll Crave In A Place You'll Love
+                        </p>
+                        <a href="booking.html" class="btn">Book A Table</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide slide2">
+                    <div class="content">
+                        <img src="./Images/1.png">
+
+                        <h3>Catering & Events</h3>
+                        <h1>Service At Its Best</h1>
+                        <p>
+                            Celebrate Life, Celebrate With Us
+                        </p>
+                        <a href="booking.html" class="btn">Make A Reservation</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide slide3">
+                    <div class="content">
+                        <img src="./Images/1.png">
+
+                        <h3>Order Online</h3>
+                        <h1>Taste Like Home</h1>
+                        <p>
+                            Rain or Shine, It's Time to Dine
+                        </p>
+                        <a href="booking.html" class="btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- slider section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <div class="image">
+            <img src="./Images/aboutbg.png" alt="">
+        </div>
+
+        <div class="content">
+            <h3 class="title">What's Makes Our Food Delicious?</h3>
+            <p>Filipino dishes are unique as it draws inspiration from several influences.
+                Drawing from a rich cultural history and the diversity of flavors, aroma and color
+                that make up the Filipino cuisine, it is sure to bring to the table a one of a kind experience.</p>
+            <a href="about.html" class="button">Read More</a>
+            <div class="icons-container">
+                <div class="icons">
+                    <img src="./Images/serv-1.png" alt="">
+                    <h3>Fast Delivery</h3>
+                </div>
+                <div class="icons">
+                    <img src="./Images/serv-2.png" alt="">
+                    <h3>Fresh Food</h3>
+                </div>
+                <div class="icons">
+                    <img src="./Images/serv-3.png" alt="">
+                    <h3>Best Quality</h3>
+                </div>
+                <div class="icons">
+                    <img src="./Images/serv-4.png" alt="">
+                    <h3>24/7 Support</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+
+    <!-- popular foods section starts  -->
+
+    <section class="popular" id="popular">
+
+        <div class="heading">
+            <h3>Our Special Dishes</h3>
+            <p>
+                Filipino cuisine is often tagged as “the next big thing” in the culinary world. Drawing inspiration from
+                many international influences, Filipino food is created to suit local tastes – resulting in an
+                altogether fascinating cuisine.
+            </p>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <Button onclick="Toggle()" id="heart-btn" class="heart-button"><i class="fas fa-heart"></i></Button>
+                <div class="image">
+                    <img src="./Images/about1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Siningang</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (40) </span>
+                    </div>
+                    <div class="price">₱100.00 <span>₱120.00</span></div>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <Button onclick="Toggle()" id="heart-btn" class="heart-button"><i class="fas fa-heart"></i></Button>
+                <div class="image">
+                    <img src="./Images/about2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Caldereta</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (39) </span>
+                    </div>
+                    <div class="price">₱100.00 <span>₱120.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <Button onclick="Toggle()" id="heart-btn" class="heart-button"><i class="fas fa-heart"></i></Button>
+                <div class="image">
+                    <img src="./Images/about3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Adobo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (25) </span>
+                    </div>
+                    <div class="price">₱150.00 <span>₱180.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <Button onclick="Toggle()" id="heart-btn" class="heart-button"><i class="fas fa-heart"></i></Button>
+                <div class="image">
+                    <img src="./Images/about4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Tinola</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (36) </span>
+                    </div>
+                    <div class="price">₱130.00 <span>₱150.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <Button onclick="Toggle()" id="heart-btn" class="heart-button"><i class="fas fa-heart"></i></Button>
+                <div class="image">
+                    <img src="./Images/about1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Sinigang</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (37) </span>
+                    </div>
+                    <div class="price">₱150.00 <span>₱150.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <Button onclick="Toggle()" id="heart-btn" class="heart-button"><i class="fas fa-heart"></i></Button>
+                <div class="image">
+                    <img src="./Images/about2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Caldereta</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (45) </span>
+                    </div>
+                    <div class="price">₱150.00 <span>₱160.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <Button onclick="Toggle()" id="heart-btn" class="heart-button"><i class="fas fa-heart"></i></Button>
+                <div class="image">
+                    <img src="./Images/about3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Adobo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (29) </span>
+                    </div>
+                    <div class="price">₱90.00 <span>₱100.00</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <Button onclick="Toggle()" id="heart-btn" class="heart-button"><i class="fas fa-heart"></i></Button>
+                <div class="image">
+                    <img src="./Images/about4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Tinola</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span> (33) </span>
+                    </div>
+                    <div class="price">₱120.00 <span>₱130.00</span></div>
+                </div>
+            </div>
+
+            <script>
+                   var btnvar1 = document.getElementById('heart-btn');
+            
+                   function Toggle(){
+                            if (btnvar1.style.color =="red") {
+                                btnvar1.style.color = "grey"
+                            }
+                            else{
+                                btnvar1.style.color = "red"
+                            }
+                            }           
+            </script>
+
+    </section>
+
+    <div class="view">
+        <a href="Menus/FILCUS MENU.pdf" class="btnview">View All Menu</a>
+    </div>
+    </div>
+    <!-- popular foods section ends -->
+
+    <!-- banner section starts  -->
+
+    <section class="banner">
+
+        <div class="row-banner">
+            <div class="content">
+                <span>Extra Special</span>
+                <h3>Adobo</h3>
+                <p>With Garlic Fried Rice and Pinot Noir</p>
+                <a href="booking.html" class="btn">Order Now</a>
+            </div>
+        </div>
+
+        <div class="Home-Services">
+            <h3>Services</h3>
+            <p>
+                Food is an integral part of the filipino culture. To understand why, you need to travel and experience
+                it. Our restaurant can feed you, your family, friends, company, and roll up at your party. Treat them to
+                our extra special cuisine, crafted to make your everyday exceptional.
+            </p>
+        </div>
+
+        <div class="grid-banner">
+            <div class="grid">
+                <img src="Images/services13.svg" alt="">
+                <div class="content center">
+                    <h3>Food Delivery</h3>
+                    <span>Order from our full menu, and enjoy Filipino Cuisine in the comfort of your home.</span>
+                    <div><a href="booking.html" class="btn">Order Now</a></div>
+                </div>
+            </div>
+            <div class="grid">
+                <img src="Images/services2.svg" alt="">
+                <div class="content center">
+                    <h3>Dine-In</h3>
+                    <span>Come for our fresh, delicious fare, and stay for a dining experience you won’t forget.</span>
+                    <div><a href="booking.html" class="btn">Book A Table</a></div>
+                </div>
+            </div>
+            <div class="grid">
+                <img src="Images/services7.svg" alt="">
+                <div class="content center">
+                    <h3>Catering</h3>
+                    <span>No matter your reason for celebrating, we’ll make sure everyone has a great time.</span>
+                    <div><a href="booking.html" class="btn">Make A Reservation</a></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- banner section ends -->
+
+    <!-- footer section start -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> FilCus <i class="fas fa-shopping-basket"></i> </h3>
+                <p>FilCus is a food website that promotes Filipino Cuisines to the world through simple, delicious,
+                    quality and extraordinary foods.</p>
+                <div class="share">
+                    <a href="https://www.facebook.com/profile.php?id=100083292724909&mibextid=ZbWKwL"
+                        class="fab fa-facebook-f"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100083292724909&mibextid=ZbWKwL"
+                        class="fab fa-twitter"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100083292724909&mibextid=ZbWKwL"
+                        class="fab fa-instagram"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="contact.html" class="links"> <i class="fas fa-phone"></i> +63 12-3456-789 </a>
+                <a href="contact.html" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                <a href="contact.html" class="links"> <i class="fas fa-envelope"></i> filcus.info@gmail.com </a>
+                <a href="contact.html" class="links"> <i class="fas fa-map-marker-alt"></i> 13 Street BGC, Taguig </a>
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> Home </a>
+                <a href="about.html" class="links"> <i class="fas fa-arrow-right"></i> About Us </a>
+                <a href="menu.html" class="links"> <i class="fas fa-arrow-right"></i> Menu </a>
+                <a href="services.html" class="links"> <i class="fas fa-arrow-right"></i> Services </a>
+                <a href="contact.html" class="links"> <i class="fas fa-arrow-right"></i> Contact Us</a>
+            </div>
+
+            <div class="box">
+                <form action="https://formspree.io/f/mqkjjeqd" method="POST">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe For Latest Updates</p>
+                    <div>
+                        <label> <input type="email" placeholder="Your Email" class="email" required></label>
+                    </div>
+                    <input type="submit" value="Subscribe" class="button">
+                </form>
+            </div>
+
+        </div>
+
+        <div class="credit"> Copyright © 2022 <span>FilCus.</span> | All Rights Reserved. </div>
+
+        </div>
+    </section>
+    <!-- footer section end -->
+
+    <!-- jump to top -->
+
+    <a href="#"><button class="topbtn"><i class="fa-solid fa-angle-up"></i></button></a>
+
+    <!-- loader  -->
+    <div class="loader-container">
+        <img src="images/loader.gif" alt="">
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".home-slider", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 7500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop: true,
+        });
+    </script>
+    <script type="text/javascript">
+        let menu = document.querySelector('#menu');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+
+
+        // Header hides the navbar on scroll down
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("header1").style.top = "0";
+            } else {
+                document.getElementById("header1").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+
+    </script>
+
+</body>
+
+</html>

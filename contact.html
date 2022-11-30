@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>FilCus - Contact Us </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- fontawesome icon -->
+  <link href="Images/Logo1.png" rel="icon">
+</head>
+<body>
+
+  <!-- header section start -->
+  <header id="header1">
+    <a href="index.html" class="logo"><img src="./Images/Logo3.png"></a>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="menu.html">Menu</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact Us</a>
+    </nav>
+    <!-- search-form  -->
+    <div class="icons">
+      <a class="fas fa-bars" id="menu"></a>
+      <a href="https://www.facebook.com/profile.php?id=100083292724909&mibextid=ZbWKwL" class="fab fa-facebook-f"></a>
+      <a href="https://www.facebook.com/profile.php?id=100083292724909&mibextid=ZbWKwL" class="fab fa-instagram"></a>
+      <a href="https://www.facebook.com/profile.php?id=100083292724909&mibextid=ZbWKwL" class="fab fa-twitter"></a>
+    </div>
+  </header>
+  <!-- header section end -->
+
+  <!-- contact section start -->
+  <section class="servicesection" id="services">
+
+    <div class="content">
+      <h3>We'd Love to Hear From You!</h3>
+      <p> Email us with any questions or inquiries. We would be happy to answer your
+        questions and we'll be in touch with you as soon as possible. </p>
+      <a href="index.html">Home </a> <span> / </span>
+      <a href="about.html">About Us </a> <span> / </span>
+      <a href="menu.html"> Menu </a> <span> / </span>
+      <a href="services.html"> Services </a> <span> / </span>
+      <i href="contact.html" class="active">Contact Us</i>
+
+    </div>
+
+  </section>
+
+  <div class="contact-body">
+    <div class="contact-info">
+      <div>
+        <span><i class="fas fa-mobile-alt"></i></span>
+        <span>Phone No.</span>
+        <span class="text">+63 12-3456-789 </span>
+      </div>
+      <div>
+        <span><i class="fas fa-envelope-open"></i></span>
+        <span>E-mail</span>
+        <span class="text">filcus.info@gmail.com</span>
+      </div>
+      <div>
+        <span><i class="fas fa-map-marker-alt"></i></span>
+        <span>Address</span>
+        <span class="text">13 Street Bonifacio Global City, Taguig City</span>
+      </div>
+      <div>
+        <span><i class="fas fa-clock"></i></span>
+        <span>Opening Hours</span>
+        <span class="text">Monday - Friday : 7:00am to 10:00pm</span>
+        <span class="text">Saturday - Sunday : 8:00am to 8:00pm</span>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <form action="https://formspree.io/f/xlevzvrr" method="POST">
+        <div>
+          <label> First Name <input type="text" name="First Name" class="form-control" required></label>
+          <label> Last Name <input type="text" name="Last Name" class="form-control" required></label>
+        </div>
+        <div>
+          <label> E-mail <input type="email" name="E-mail" class="form-control" required></label>
+          <label> Phone No. <input type="text" name="Phone No." class="form-control" required></label>
+        </div>
+        <label>Message <textarea name="Message" class="form-control" textarea rows="5" required></textarea></label>
+        <input type="submit" class="send-btn" value="Send Message" > 
+        <button id="clear" input type="reset" class="clear" >Clear All</button>
+      </form>
+
+      <div>
+        <img src="Images/faqs.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30895.84358456133!2d121.02403471941288!3d14.543110799691348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8f3fa2994af%3A0x89c988af4760e40a!2sBonifacio%20Global%20City%2C%20Taguig%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1668595710963!5m2!1sen!2sph"
+      width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0"></iframe>
+  </div>
+  <!-- contact section end -->
+
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <script>
+    /* paste this line in verbatim */
+    window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
+    /* customize formbutton below*/
+    formbutton("create", {
+      action: "https://formspree.io/f/xlevzvrr",
+      title: "How can we help?",
+      fields: [
+        {
+          type: "email",
+          label: "Email:",
+          name: "email",
+          required: true,
+          placeholder: "your@email.com"
+        },
+        {
+          type: "textarea",
+          label: "Message:",
+          name: "message",
+          placeholder: "What's on your mind?",
+        },
+        { type: "submit" }
+      ],
+      styles: {
+        title: {
+          backgroundColor: "orange"
+        },
+        button: {
+          backgroundColor: "orange"
+        }
+      }
+    });
+  </script>
+
+
+  <!-- footer section start -->
+  <section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3> FilCus <i class="fas fa-shopping-basket"></i> </h3>
+        <p>FilCus is a food website that promotes Filipino Cuisines to the world through simple, delicious, quality and
+          extraordinary foods.</p>
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="#" class="links"> <i class="fas fa-phone"></i> +63 12-3456-789 </a>
+        <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+        <a href="#" class="links"> <i class="fas fa-envelope"></i> filcus.info@gmail.com </a>
+        <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> 13 Street BGC, Taguig </a>
+      </div>
+
+      <div class="box">
+        <h3>Quick Links</h3>
+        <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> Home </a>
+        <a href="about.html" class="links"> <i class="fas fa-arrow-right"></i> About Us </a>
+        <a href="menu.html" class="links"> <i class="fas fa-arrow-right"></i> Menu </a>
+        <a href="services.html" class="links"> <i class="fas fa-arrow-right"></i> Services </a>
+        <a href="contact.html" class="links"> <i class="fas fa-arrow-right"></i> Contact Us</a>
+      </div>
+
+      <div class="box">
+        <form action="https://formspree.io/f/mqkjjeqd" method="POST">
+          <h3>Newsletter</h3>
+          <p>Subscribe For Latest Updates</p>
+          <div>
+            <label> <input type="email" placeholder="Your Email" class="email" required></label>
+          </div>
+          <input type="submit" value="Subscribe" class="button">
+        </form>
+      </div>
+
+    </div>
+
+    <div class="credit"> Copyright © 2022 <span>FilCus.</span> | All Rights Reserved. </div>
+
+    </div>
+  </section>
+  <!-- footer section end -->
+
+  <!-- jump to top -->
+
+  <a href="#"><button class="topbtn"><i class="fa-solid fa-angle-up"></i></button></a>
+
+
+  <script>
+    // Header hides the navbar on scroll down
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("header1").style.top = "0";
+        } else {
+            document.getElementById("header1").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
+  
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
